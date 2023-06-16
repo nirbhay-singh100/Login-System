@@ -7,12 +7,16 @@
     
    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/Formstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+ 
 </head>
 <body>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="left-div col-lg-6 col-md-6 col-sm-12 ">
+            <div class="left-div-login col-lg-6 col-md-6 col-sm-12 ">
                 
                 <div class="col-md-12 register-form shadow-lg p-3 mb-5 bg-white rounded">
                     <form action="/login" method="post">
@@ -27,17 +31,19 @@
                             <small id="Password_error"></small>
                         </div>
                           
-                          <button type="submit" name="Register" class="btn btn-md btn-primary">Login</button>
-                          <p class="text-center" style="padding-top: 10px">Didn't Have an account ? <a href="">Singup</a></p>
+                          <button type="submit" name="Register" class="btn btn-md btn-primary" onclick="validate()">Login</button>
+                          <p class="text-center" style="padding-top: 10px">Didn't Have an account ? <a href="/signup">Signup</a></p>
                     </form>
                 </div>
                 
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                
+                <h1 class="login-heading">Welcome Back :)</h1>
+                <p id="test" value="abc"></p>
             </div>
         </div>
     </div>
+    
     
 </body>
 </html>

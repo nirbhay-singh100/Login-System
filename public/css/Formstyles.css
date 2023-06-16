@@ -1,0 +1,38 @@
+body{
+    background-color: #668cff ;
+}
+
+.left-div-register{
+    padding-top: 10% !important;
+    padding-left: 7% !important;
+}
+.left-div-login{
+    padding-top: 15% !important;
+    padding-left: 7% !important;
+}
+
+
+
+.register-heading{
+    text-align: center;
+    font-size: 6.5rem;
+    font-family: 'Montserrat', san-serif;
+    font-weight:bold;
+    position: relative;
+    
+    color:white;
+    margin-top: 200px !important;
+    
+}
+
+.login-heading{
+    text-align: center;
+    font-size: 6.5rem;
+    font-family: 'Montserrat', san-serif;
+    font-weight:bold;
+    position: relative;
+    
+    color:white;
+    margin-top: 200px !important;
+}
+

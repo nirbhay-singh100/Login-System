@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Yukihira Souma</title>
+    <link rel="stylesheet" href="./css/LandingPagestyles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="top-container">
+        <div class="header">
+            <span class="header-elements"><a href="#about-me">About Me</a></span>
+            <span class="header-elements"><a href="#about-project">About Project</a></span>
+            <span class="header-elements"><a href="/logout">Logout</a></span>
+            
+            
+        </div>
+      <div class="user">
+        <p class="user-name">Hello <%= username %></p>
+      </div>
+      <div class="my-name">
+        <h1>I'm Nirbhay.</h1>
+      <h2>a <span class="T">MERN </span> Developer</h2>
+      <img class="cloud2" src="images/cloud.png" alt="cloud-image" >
+      <img class="mountain" src="images/mountain.png" alt="mountain-image"  >
+      <!-- <img class="cloud1" src="images/cloud.png" alt="cloud-image" /> -->
+      </div>  
+
+    </div>
+
+    <div class="middle-container" id="about-me">
+        <h2>About Me</h2>
+      <div class="profile">
+        <img class="my-image" src="images/my_image.jpg" alt="Nirbhay's Image">
+        <h3>Hello.</h3>
+        <p class="intro">My name is Nirbhay Singh and I am doing my undergrad in CSE. I am a web developer (MERN Stack) and a Blockchain enthusiast. I have been coding since my first year of engineering i.e. 2021 and very soon I started building projects. Particularly I like building backend part of website more compare to front end part. </p>
+      </div>
+      <hr>
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="skill-image-coding" src="images/skill_coding.webp" alt="rumbling">
+          <h3>Coding and Development</h3>
+          <p class="skill-coding-para">I started my coidng journey with C language later I learned about C++ with the help of which I learned about Data Structures and Algorithms which made my coding fundamentally strong. I created my first development project using Python(Flask) to build a dummy blockchain project. Later I learned about web development in which I choose to master MERN stack. I have created several projects related to front-end and backend both.</p>
+        </div>
+        <div class="skill-row">
+          <img class="skill-image-communication" src="images/skill-communication.png" alt="">
+          <h3>Communication and Collaboration</h3>
+          <p class="para-2">Apart from coding I have strong communication and collaboration skills. My proficiency level in English as a language is Bussiness level. Also I am always open to learn more and more about English as a language. I believe in order to build great thing you need collaborative efforts.</p>
+          
+        </div>
+      </div>
+      <hr>
+      
+      <div class="about-project" id="about-project">
+        <h2>About Project</h2>
+        <p class="about-project-para-intro">This project is to demonstrate the Register and Login system that we genrally see in our daily lives. A Login system is much more that just collecting and storing your data. I has to be secure and there should be appropriate Authentication and Validation.</p>
+        <div>
+            <h3 class="about-project-heading">How does it work ?</h3>
+            <p class="about-project-working-para">After submitting the register form the data of the user is first go through some validations. If everything is fine then the data is stored in Database (MongoDB). Once the user is registered they will be taken to login form. After submitting a login form it will first go through some normal validation and after that A search query will be used to find the user data.<br><br>
+            For authentication we are using <strong>jsonwebtoken</strong> package that will generate a jwt token both in register and login. Later that jwt token will be stored in <strong>cookies</strong> so that it can be send to browser for verify the user. The token will be valid only for a particular period of time. By clicking on logout we will be ableto delete our cookies that has our jwt token and we can securelu logout from the site. </p>
+        </div>
+        <div>
+            <h3 class="about-project-heading">Tech Used</h3>
+            <ul class="about-para-tech">
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
+                <li>MongoDB</li>
+                <li>Bootstrap</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+        <hr>
+        
+      </div>
+
+
+
+
+
+
+
+
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>If you want me in your Team.</h3>
+        
+        <a class="btn" href="mailto:21bcs1433@cuchd.in">CONTACT ME</a>
+      </div>
+    </div>
+
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/feed/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/home">Twitter</a>
+      <a class="footer-link" href="https://github.com/nirbhay-singh100">Github</a>
+      <p class="copyright">© 2023 Nirbhay Singh.</p>
+    </div>
+
+
+    </p>
+    </p>
+    
+  </body>
+</html>

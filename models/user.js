@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const conn = require("../db/conn")
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+
 const userSchema = new mongoose.Schema({
     firstName: {
         type: String,
@@ -18,7 +19,7 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true
+        required: true,
     },
     tokens: [{
         token: {
@@ -40,13 +41,13 @@ userSchema.methods.generateAuthToken = async function(){
     }
 }
 
-userSchema.pre("save", async function(next){
-    // const passwordHah = await bcrypt.hash(password, 10);
+// userSchema.pre("save", async function(next){
+//     // const passwordHah = await bcrypt.hash(password, 10);
     
-    this.password = await bcrypt.hash(this.password, 10);
-    //console.log(`the current password is ${this.password}`);
-    next();
-});
+//     this.password = await bcrypt.hash(this.password, 10);
+//     //console.log(`the current password is ${this.password}`);
+//     next();
+// });
 
 const Register = new mongoose.model("RegisteredUser", userSchema);
 module.exports = Register;
