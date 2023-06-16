@@ -1,0 +1,30 @@
+body{
+    background-color: #668cff !important;
+}
+
+.main-div{
+    height: 800px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.heading-div{
+    /* margin-top: 300px; */
+    /* height: 200px; */
+    width: 50%; 
+    background-color: white;
+    border-radius: 6%;
+    
+}
+h1{
+    margin: 10px !important;
+}
+a{
+    
+    font-size: 3.6rem !important;
+    color: blue !important ;
+    text-decoration: none !important;
+}
+.main-div :hover{
+    background-color: #e6e6e6 !important;
+}

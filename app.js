@@ -20,7 +20,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, "js")));
 
-
+app.get("/", (req, res) => {
+    res.render("root");
+})
 
 app.get("/signup", async (req, res) => {
     res.render("signup");
